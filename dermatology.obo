@@ -1,8 +1,9 @@
 format-version: 1.2
-date: 12:06:2013 22:12
-saved-by: Hannah
-auto-generated-by: OBO-Edit 2.3
+date: 17:07:2013 17:44
+saved-by: George
+auto-generated-by: OBO-Edit 2.3-beta5
 default-namespace: DERMO
+namespace-id-rule: * DERMO:$sequence(7,0,9999999)$
 ontology: DERMO
 
 [Term]
@@ -30,16 +31,21 @@ creation_date: 2013-01-16T03:32:21Z
 
 [Term]
 id: DERMO:0000003
-name: disease process
-created_by: Hannah
-creation_date: 2013-01-16T03:34:26Z
+name: psoriasis triggered by bacterial infection
+def: "psoriasis where bacterial infection is judged to be the triggering cause with or without genetic predisposition" [ISBN:9780723435716, XX:<new dbxref>]
+is_a: DERMO:0000124 ! psoriasis
+is_a: DERMO:0002063 ! skin disease caused by bacteria
+created_by: Paul
+creation_date: 2013-07-17T09:11:22Z
 
 [Term]
 id: DERMO:0000004
-name: environmental - toxic/contact
-is_a: DERMO:0000003 ! disease process
-created_by: Hannah
-creation_date: 2013-01-16T03:39:09Z
+name: psoriasis triggered by fungal infection
+def: "psoriasis where fungal infection is judged to be the triggering cause with or without genetic predisposition" [ISBN:9780723435716]
+is_a: DERMO:0000124 ! psoriasis
+is_a: DERMO:0002246 ! fungal skin disease
+created_by: Paul
+creation_date: 2013-07-17T09:11:28Z
 
 [Term]
 id: DERMO:0000005
@@ -69,10 +75,12 @@ creation_date: 2013-01-16T03:45:33Z
 
 [Term]
 id: DERMO:0000008
-name: developmental genetic
-is_a: DERMO:0000003 ! disease process
-created_by: Hannah
-creation_date: 2013-01-16T03:49:24Z
+name: HIV-related psoriasis
+def: "psoriasis occurring in patients with HIV infection" [PMID:20610329]
+is_a: DERMO:0000124 ! psoriasis
+is_a: DERMO:0002329 ! papulosquamous HIV-related cutaneous disorder
+created_by: Paul
+creation_date: 2013-07-17T09:11:37Z
 
 [Term]
 id: DERMO:0000009
@@ -1100,8 +1108,6 @@ xref: MP:0001193 "psoriasis"
 is_a: DERMO:0000121 ! inflammatory dermatoses
 is_a: DERMO:0000430 ! papulosquamous disorder
 is_a: DERMO:0000432 ! causes of secondary erythroderma
-is_a: DERMO:0001742 ! epithelial disorder of the anogenital region
-is_a: DERMO:0002329 ! papulosquamous HIV-related cutaneous disorder
 relationship: results_in DERMO:0001613 ! nail abnormality in dermatologic disease
 created_by: Hannah
 creation_date: 2013-01-17T09:11:35Z
@@ -1305,15 +1311,6 @@ is_a: DERMO:0000622 ! endocrine disease
 relationship: has_symptom DERMO:0000151 ! endocrine pruritus
 created_by: Hannah
 creation_date: 2013-01-17T10:11:48Z
-
-[Term]
-id: DERMO:0000153
-name: diabetes mellitus
-xref: DOID:9351 "diabetes mellitus"
-xref: HP:0000819 "diabetes mellitus"
-relationship: has_symptom DERMO:0000151 ! endocrine pruritus
-created_by: Hannah
-creation_date: 2013-01-17T10:12:04Z
 
 [Term]
 id: DERMO:0000154
@@ -2070,6 +2067,7 @@ creation_date: 2013-01-17T04:47:28Z
 [Term]
 id: DERMO:0000249
 name: treponematoses
+is_a: DERMO:0002161 ! skin disease caused by spirochetes
 relationship: has_symptom DERMO:0000246 ! hypomelanosis due to infection/parasitic infection
 created_by: Hannah
 creation_date: 2013-01-17T04:48:28Z
@@ -2253,7 +2251,7 @@ creation_date: 2013-01-18T09:08:20Z
 [Term]
 id: DERMO:0000275
 name: immune mediated
-is_a: DERMO:0000003 ! disease process
+is_a: DERMO:0000107 ! metabolic or systemic disease
 created_by: Hannah
 creation_date: 2013-01-18T09:09:14Z
 
@@ -3162,6 +3160,15 @@ created_by: Hannah
 creation_date: 2013-01-20T06:31:03Z
 
 [Term]
+id: DERMO:0000387
+name: anogenital psoriasis
+def: "psoriasis of the anogenital region" [ISBN:9780723435716]
+is_a: DERMO:0000124 ! psoriasis
+is_a: DERMO:0001742 ! epithelial disorder of the anogenital region
+created_by: Paul
+creation_date: 2013-07-17T09:11:55Z
+
+[Term]
 id: DERMO:0000388
 name: pigmentation genodermatosis
 is_a: DERMO:0000002 ! genodermatosis
@@ -3682,7 +3689,7 @@ id: DERMO:0000455
 name: graft-versus-host disease
 alt_id: DERMO:0002753
 synonym: "GVHD" EXACT []
-is_a: DERMO:0000107 ! metabolic or systemic disease
+is_a: DERMO:0000275 ! immune mediated
 is_a: DERMO:0000444 ! lichenoid dermatosis
 is_a: DERMO:0001436 ! lymphocytic cicatricial alopecia
 created_by: Hannah
@@ -5716,6 +5723,7 @@ alt_id: DERMO:0000403
 synonym: "generalized pustular psoriasis" RELATED []
 xref: ICD10:L40.1 "pustular psoriasis"
 xref: OMIM:614204 "generalised pustular psoriasis"
+xref: UMLS:C0343055 "generalized pustular psoriasis"
 is_a: DERMO:0000124 ! psoriasis
 is_a: DERMO:0000682 ! autoinflammatory genodermatosis
 created_by: Hannah
@@ -10033,6 +10041,16 @@ created_by: Hannah
 creation_date: 2013-02-03T10:34:23Z
 
 [Term]
+id: DERMO:0001224
+name: arthropathic psoriasis
+def: "Inflammatory arthritis associated psoriasis" [ISBN:9780723435716]
+synonym: "psoriatic arthritis" EXACT []
+xref: UMLS_CUI:C0003872 "Arthropathic psoriasis"
+is_a: DERMO:0000124 ! psoriasis
+created_by: Paul
+creation_date: 2013-07-17T09:23:15Z
+
+[Term]
 id: DERMO:0001225
 name: plasmablastic lymphoma
 is_a: DERMO:0001217 ! B-cell lymphoma of the skin
@@ -11664,6 +11682,7 @@ creation_date: 2013-02-05T01:26:24Z
 [Term]
 id: DERMO:0001430
 name: psoriasis of the scalp
+def: "psoriasis occurring in the scalp" []
 is_a: DERMO:0000124 ! psoriasis
 is_a: DERMO:0001426 ! non-cicatricial alopecia
 created_by: Hannah
@@ -12369,15 +12388,6 @@ created_by: Hannah
 creation_date: 2013-02-05T03:34:30Z
 
 [Term]
-id: DERMO:0001522
-name: hypercosticism
-synonym: "cushing's syndrome" EXACT []
-xref: DOID:12252 "hypercosticism"
-relationship: has_symptom DERMO:0001520 ! adrenal hirsutism
-created_by: Hannah
-creation_date: 2013-02-05T03:35:13Z
-
-[Term]
 id: DERMO:0001523
 name: ovarian hirsutism
 is_a: DERMO:0001519 ! endocrine organ-based hirsutism
@@ -12422,6 +12432,7 @@ creation_date: 2013-02-05T03:37:45Z
 id: DERMO:0001528
 name: cushing's disease
 is_a: DERMO:0000622 ! endocrine disease
+relationship: has_symptom DERMO:0001520 ! adrenal hirsutism
 relationship: has_symptom DERMO:0001527 ! pituitary hirsutism
 created_by: Hannah
 creation_date: 2013-02-05T03:38:05Z
@@ -13069,7 +13080,7 @@ id: DERMO:0001611
 name: ectodermal dysplasia
 xref: DOID:2121 "ectodermal dysplasia"
 xref: HP:0000968 "ectodermal dysplasia"
-relationship: results_in DERMO:0001561 ! congenital or hereditary nail disease
+is_obsolete: true
 created_by: Hannah
 creation_date: 2013-02-13T03:31:52Z
 
@@ -13092,8 +13103,10 @@ creation_date: 2013-02-13T03:33:56Z
 [Term]
 id: DERMO:0001614
 name: acrodermatitis continua of hallopeau
+def: "form of psoriasis where pustules are seen on the tips of the fingers and toes often followed by crusting and scaling." [ISNBN:9780723435716]
 synonym: "dermatitis repens" EXACT []
 synonym: "hallopeau's acrodermatitis" EXACT []
+xref: UMLS_CUI:C0392439 "acrodermatis continua"
 is_a: DERMO:0000692 ! pustular psoriasis
 relationship: results_in DERMO:0001613 ! nail abnormality in dermatologic disease
 created_by: Hannah
@@ -13199,15 +13212,6 @@ is_a: DERMO:0000007 ! adnexal disease
 relationship: results_in DERMO:0001616 ! nail abnormality in systemic disease
 created_by: Hannah
 creation_date: 2013-02-14T08:54:17Z
-
-[Term]
-id: DERMO:0001628
-name: HIV infection
-xref: DOID:526 "hiv infection"
-relationship: results_in DERMO:0001616 ! nail abnormality in systemic disease
-relationship: results_in DERMO:0001727 ! oral manifestation of systemic disease
-created_by: Hannah
-creation_date: 2013-02-14T08:54:56Z
 
 [Term]
 id: DERMO:0001629
@@ -21493,6 +21497,7 @@ id: DERMO:0002669
 name: type 2 diabetes mellitus
 xref: DOID:9352 "type 2 diabetes mellitus"
 is_a: DERMO:0000622 ! endocrine disease
+relationship: has_symptom DERMO:0000151 ! endocrine pruritus
 relationship: has_symptom DERMO:0002665 ! endocrine amyloidosis
 created_by: Hannah
 creation_date: 2013-02-28T03:58:24Z
@@ -28100,6 +28105,57 @@ name: crisponi syndrome
 is_a: DERMO:0000631 ! cold-induced sweating syndrome
 created_by: Hannah
 creation_date: 2013-03-15T10:12:09Z
+
+[Term]
+id: DERMO:0003512
+name: chronic plaque psoriasis
+def: "Plaque psoriasis is the most common presentation of psoriasis. It presents as small to large, well demarcated, red, scaly and thickened areas of skin. It most likely to affect elbows, knees, and lower back but may arise on any part of the body." [ISBN:9780723435716]
+is_a: DERMO:0000124 ! psoriasis
+created_by: Paul
+creation_date: 2013-07-17T09:27:39Z
+
+[Term]
+id: DERMO:0003513
+name: guttate psoriasis
+def: "psoriais presenting in young people and adolescents as small (0.5-1.5 cm in diameter) lesions over the upper trunk and proximal extremities." [ISBN:9780723435716]
+synonym: "eruptive psoriasis" EXACT []
+xref: UMLS_CUI:C0343052 "gutatte psoriasis"
+is_a: DERMO:0003512 ! chronic plaque psoriasis
+created_by: Paul
+creation_date: 2013-07-17T09:28:22Z
+
+[Term]
+id: DERMO:0003514
+name: erythrodermic psoriasis
+def: "psoriasis associated with erthroderma" [http:http\://www.dermnetnz.org/scaly/erythrodermic-psoriasis.html, ISBN:9780723435716]
+is_a: DERMO:0000432 ! causes of secondary erythroderma
+is_a: DERMO:0003512 ! chronic plaque psoriasis
+created_by: Paul
+creation_date: 2013-07-17T09:28:26Z
+
+[Term]
+id: DERMO:0003515
+name: generalised pustular psoriasis
+def: "psoriasis presenting as widespread pustules on a background of red and tender skin. Widespread patches may occur randomly on any part of the body." [http:http\://www.dermnetnz.org/scaly/pustular-psoriasis.html, ISBN:9780723435716]
+synonym: "acute generalised pustular psoriasis of von Zumbusch" RELATED []
+xref: ICD10:L40.1 "pustular psoriasis"
+xref: OMIM:614204 "generalised pustular psoriasis"
+xref: UMLS_CUI:C0343055 "generealized pustular psoriasis"
+is_a: DERMO:0000692 ! pustular psoriasis
+created_by: Paul
+creation_date: 2013-07-17T09:29:40Z
+
+[Term]
+id: DERMO:0003516
+name: pustulosis of the palms and soles
+def: "chronic pustular psoriasis affecting the palms and soles." [ISBN:9780723435716]
+synonym: "palmoplantar pustulosis" EXACT []
+synonym: "Pustulosis palmaris et plantaris" EXACT []
+xref: ICD10:L40.3 "pustulosis palmaris et plantaris"
+xref: UMLS_CUI:C0030246 "pustulosis palmaris et plantaris"
+is_a: DERMO:0000692 ! pustular psoriasis
+created_by: Paul
+creation_date: 2013-07-17T09:30:04Z
 
 [Term]
 id: DERMO:1000001
