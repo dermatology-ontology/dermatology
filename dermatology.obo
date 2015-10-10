@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 19:03:2015 17:10
+date: 09:10:2015 16:29
 saved-by: Paul
 auto-generated-by: OBO-Edit 2.3-beta5
 default-namespace: DERMO
@@ -1006,7 +1006,7 @@ creation_date: 2013-01-17T08:55:12Z
 
 [Term]
 id: DERMO:0000109
-name: disorder of hair, nails, or mucous membranes
+name: disorder of hair and nails 
 is_a: DERMO:0000001 ! cutaneous disease
 created_by: Hannah
 creation_date: 2013-01-17T08:55:30Z
@@ -1908,7 +1908,7 @@ xref: OMIM:606897 "chediak-higashi syndrome"
 is_a: DERMO:0000211 ! disorder of melanosome biogenesis
 is_a: DERMO:0003016 ! primary hemophagocytic lymphohistiocytosis
 is_a: DERMO:0003287 ! primary immunodeficiency syndrome with cutaneous manifestation
-is_a: ID:0000003 ! genetic dyschromatosis disorder
+is_a: DERMO:1010003 ! genetic dyschromatosis disorder
 created_by: Hannah
 creation_date: 2013-01-17T11:23:27Z
 
@@ -1941,7 +1941,7 @@ name: griscelli syndrome
 synonym: "GS" EXACT []
 xref: DERMLEX:2000 "griscelli syndrome"
 is_a: DERMO:0000225 ! disorder of melanosome transport and/or transfer
-is_a: ID:0000003 ! genetic dyschromatosis disorder
+is_a: DERMO:1010003 ! genetic dyschromatosis disorder
 created_by: Hannah
 creation_date: 2013-01-17T11:31:22Z
 
@@ -2023,7 +2023,7 @@ synonym: "ziprkowski-margolis syndrome" EXACT []
 xref: DERMLEX:3194 "albinism-deafness syndrome"
 xref: OMIM:300700 "albinism-deafness syndrome"
 is_a: DERMO:0000196 ! hereditary hypomelanosis disorder
-is_a: ID:0000003 ! genetic dyschromatosis disorder
+is_a: DERMO:1010003 ! genetic dyschromatosis disorder
 created_by: Hannah
 creation_date: 2013-01-17T11:41:19Z
 
@@ -2159,7 +2159,7 @@ xref: DOID:4157 "secondary syphilis"
 is_a: DERMO:0000249 ! treponematoses
 is_a: DERMO:0000444 ! lichenoid dermatosis
 is_a: DERMO:0001387 ! syphilis
-is_a: ID:0000004 ! dyschromatosis due to infection
+is_a: DERMO:1010004 ! dyschromatosis due to infection
 created_by: Hannah
 creation_date: 2013-01-17T04:50:13Z
 
@@ -3161,7 +3161,7 @@ synonym: "zinsser-engman-cole syndrome" RELATED []
 xref: DERMLEX:3303 "dyskeratosis congenita"
 xref: DOID:2729 "dyskeratosis congenita"
 is_a: DERMO:0000589 ! inherited extracutaneous cancer disorder
-is_a: ID:0000003 ! genetic dyschromatosis disorder
+is_a: DERMO:1010003 ! genetic dyschromatosis disorder
 relationship: has_symptom DERMO:0000371 ! reticulated hyperpigmentation
 created_by: Hannah
 creation_date: 2013-01-20T06:04:14Z
@@ -3229,7 +3229,7 @@ synonym: "symmetrical dyschromatosis of the extremities" EXACT []
 xref: DERMLEX:3226 "dyschromatosis symmetrica hereditaria"
 xref: OMIM:146920 "dyschromatosis symmetrica hereditaria"
 is_a: DERMO:0000394 ! genetic disorder with dyschromatosis
-is_a: ID:0000003 ! genetic dyschromatosis disorder
+is_a: DERMO:1010003 ! genetic dyschromatosis disorder
 created_by: Hannah
 creation_date: 2013-01-20T06:24:13Z
 
@@ -3239,7 +3239,7 @@ name: dyschromatosis universalis hereditaria
 synonym: "DUH" EXACT []
 xref: DERMLEX:3227 "dyschromatosis universalis hereditaria"
 is_a: DERMO:0000394 ! genetic disorder with dyschromatosis
-is_a: ID:0000003 ! genetic dyschromatosis disorder
+is_a: DERMO:1010003 ! genetic dyschromatosis disorder
 created_by: Hannah
 creation_date: 2013-01-20T06:26:25Z
 
@@ -3261,7 +3261,7 @@ xref: ICD10:Q82.1 "xeroderma pigmentosum"
 is_a: DERMO:0000583 ! inherited cutaneous cancer disorder
 is_a: DERMO:0002867 ! photocarcinogenesis disorder
 is_a: DERMO:0002869 ! inherited defective DNA repair disorder
-is_a: ID:0000003 ! genetic dyschromatosis disorder
+is_a: DERMO:1010003 ! genetic dyschromatosis disorder
 created_by: Hannah
 creation_date: 2013-01-20T06:28:44Z
 
@@ -3269,7 +3269,7 @@ creation_date: 2013-01-20T06:28:44Z
 id: DERMO:0000386
 name: wende-bauckus syndrome
 synonym: "pegum syndrome" EXACT []
-is_a: ID:0000003 ! genetic dyschromatosis disorder
+is_a: DERMO:1010003 ! genetic dyschromatosis disorder
 created_by: Hannah
 creation_date: 2013-01-20T06:31:03Z
 
@@ -8555,7 +8555,7 @@ synonym: "hemangiosarcoma" EXACT []
 synonym: "lymphangiosarcoma" EXACT []
 synonym: "malignant hemangioendothelioma" EXACT []
 xref: DERMLEX:1458 "angiosarcoma"
-xref: DOID:0001816 "angiosarcoma"
+xref: DODERMO:1011816 "angiosarcoma"
 xref: DOID:2689 "angiosarcoma"
 xref: HP:0200058 "angiosarcoma"
 xref: MP:0003667 "angiosarcoma"
@@ -12057,7 +12057,7 @@ xref: DERMLEX:4950 "alopecia"
 xref: DOID:987 "alopecia"
 xref: HP:0001596 "alopecia"
 xref: MP:0000414 "alopecia"
-is_a: DERMO:0000109 ! disorder of hair, nails, or mucous membranes
+is_a: DERMO:1010006 ! hair disorder
 created_by: Hannah
 creation_date: 2013-02-05T12:17:05Z
 
@@ -12571,7 +12571,7 @@ creation_date: 2013-02-05T02:12:41Z
 id: DERMO:0001477
 name: hypertrichosis or hirsutism
 def: "Hypertrichosis represents the growth of hair in an excessive amount, whereas hirsutism is excessive growth of terminal hairs in a male pattern in a female patient." [ISBN:9780723435716]
-is_a: DERMO:0000109 ! disorder of hair, nails, or mucous membranes
+is_a: DERMO:1010006 ! hair disorder
 created_by: Hannah
 creation_date: 2013-02-05T02:15:34Z
 
@@ -13039,7 +13039,7 @@ creation_date: 2013-02-05T03:46:21Z
 [Term]
 id: DERMO:0001538
 name: nail disorder
-is_a: DERMO:0000109 ! disorder of hair, nails, or mucous membranes
+is_a: DERMO:0000109 ! disorder of hair and nails 
 created_by: Hannah
 creation_date: 2013-02-12T01:48:02Z
 
@@ -13541,7 +13541,7 @@ id: DERMO:0001599
 name: epidermolysis bullosa with mottled pigmentation
 synonym: "EBS-MP" EXACT []
 is_a: DERMO:0001582 ! epidermolysis bullosa simplex
-is_a: ID:0000003 ! genetic dyschromatosis disorder
+is_a: DERMO:1010003 ! genetic dyschromatosis disorder
 relationship: has_symptom DERMO:0000371 ! reticulated hyperpigmentation
 created_by: Hannah
 creation_date: 2013-02-13T03:04:34Z
@@ -14054,7 +14054,7 @@ creation_date: 2013-02-14T09:52:39Z
 [Term]
 id: DERMO:0001664
 name: oral disorder
-is_a: DERMO:0000109 ! disorder of hair, nails, or mucous membranes
+is_a: DERMO:0000001 ! cutaneous disease
 created_by: Hannah
 creation_date: 2013-02-14T09:54:28Z
 
@@ -14670,7 +14670,7 @@ creation_date: 2013-02-14T11:17:21Z
 [Term]
 id: DERMO:0001736
 name: anogenital non-venereal disease
-is_a: DERMO:0000109 ! disorder of hair, nails, or mucous membranes
+is_a: DERMO:0000001 ! cutaneous disease
 created_by: Hannah
 creation_date: 2013-02-14T11:23:45Z
 
@@ -18247,7 +18247,7 @@ alt_id: DERMO:0000250
 xref: DERMLEX:266 "pinta"
 is_a: DERMO:0000249 ! treponematoses
 is_a: DERMO:0002166 ! non-venereal treponematoses
-is_a: ID:0000004 ! dyschromatosis due to infection
+is_a: DERMO:1010004 ! dyschromatosis due to infection
 created_by: Hannah
 creation_date: 2013-02-19T08:47:47Z
 
@@ -29372,61 +29372,69 @@ created_by: Hannah
 creation_date: 2013-04-12T03:40:56Z
 
 [Term]
-id: ID:0000000
+id: DERMO:1010000
 name: mitochondiral disorder-induced reticulated hyperpigmentation
 is_a: DERMO:0000371 ! reticulated hyperpigmentation
 created_by: Hannah
 creation_date: 2013-06-12T21:34:29Z
 
 [Term]
-id: ID:0000001
+id: DERMO:1010001
 name: postinflammatory reticulated hyperpigmentation
 is_a: DERMO:0000371 ! reticulated hyperpigmentation
 created_by: Hannah
 creation_date: 2013-06-12T21:35:06Z
 
 [Term]
-id: ID:0000002
+id: DERMO:1010002
 name: drug-induced reticulated hyperpigmentation
 is_a: DERMO:0000371 ! reticulated hyperpigmentation
 created_by: Hannah
 creation_date: 2013-06-12T21:35:28Z
 
 [Term]
-id: ID:0000003
+id: DERMO:1010003
 name: genetic dyschromatosis disorder
 is_a: DERMO:0000380 ! dyschromatosis
 created_by: Hannah
 creation_date: 2013-06-12T21:37:28Z
 
 [Term]
-id: ID:0000004
+id: DERMO:1010004
 name: dyschromatosis due to infection
 is_a: DERMO:0000380 ! dyschromatosis
 created_by: Hannah
 creation_date: 2013-06-12T21:45:02Z
 
 [Term]
-id: ID:0000005
+id: DERMO:1010005
 name: ulerythema ophryogenes
 def: "Facial follicular atrophy, with involvement of the outer eyebrows." []
 is_a: DERMO:0002541 ! keratosis pilaris atrophicans faciei
 created_by: Hannah
 creation_date: 2014-12-07T11:19:38Z
 
+[Term]
+id: DERMO:1010006
+name: hair disorder
+def: "disorder of the hair shaft, follicle and associated structures" []
+is_a: DERMO:0000109 ! disorder of hair and nails 
+created_by: Paul
+creation_date: 2015-10-09T15:21:40Z
+
 [Typedef]
 id: associated_with
-name: associated_with (UNDECLARED)
+name: associated with
 
 [Typedef]
 id: derives_from
-name: derives_from (UNDECLARED)
+name: derives from
 
 [Typedef]
 id: has_symptom
-name: has_symptom (UNDECLARED)
+name: has symptom
 
 [Typedef]
 id: results_in
-name: results_in (UNDECLARED)
+name: results in
 
